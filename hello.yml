@@ -1,0 +1,22 @@
+云你好 api
+---
+parameters:
+  - name: name
+    in: query
+    type: string
+responses:
+  200:
+    description: "请求成功"
+    schema:
+      examples: "Hello 阿菌"
+      type: string
+  400:
+    description: "客户端错误"
+    schema:
+      examples: "您的余额不足了，不能打招呼了"
+      type: string
+  500:
+    description: "服务端错误"
+    schema:
+      examples: "sorry～服务器开小差了"
+      type: string
